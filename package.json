@@ -1,0 +1,39 @@
+{
+  "name": "snapper-shot",
+  "version": "1.0.0",
+  "description": "This is a API based sample project where we tried to define the basic architecture for a NodeJs + MongoDB project. It also includes JWT authentication for the api's as well.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "async": "^3.2.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "check-word": "^1.1.0",
+    "cors": "^2.8.5",
+    "country-state-city": "^3.0.1",
+    "dotenv": "^10.0.0",
+    "dotenv-expand": "^5.1.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mime": "^1.6.0",
+    "mongoose": "^5.12.3",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.7.2",
+    "opn": "^6.0.0",
+    "read-excel-file": "^5.2.28",
+    "request": "^2.88.2",
+    "sib-api-v3-sdk": "^8.2.1",
+    "textract": "^2.5.0",
+    "tracer": "^1.1.5"
+  }
+}

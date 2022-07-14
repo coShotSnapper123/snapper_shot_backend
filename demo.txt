@@ -1,0 +1,8 @@
+"repository": {
+    "type": "git",
+    "url": "git+https://varun-virtual@bitbucket.org/varun-virtual/resume-parsing-backend.git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/varun-virtual/resume-parsing-backend/issues"
+  },
+  "homepage": "https://bitbucket.org/varun-virtual/resume-parsing-backend#readme"
