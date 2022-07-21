@@ -1,21 +1,28 @@
 const express = require('express')
 const mongoose = require('mongoose');
-//const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 const cors = require('cors')
 const app = express()
 const port = 3000
 var dotenv = require('dotenv')
-var dotenvExpand = require('dotenv-expand')
-
 var myEnv = dotenv.config()
+var dotenvExpand = require('dotenv-expand')
+const { handleErrorResponse } = require('./utils/response-helper');
+
+app.use(bodyParser.json()); // application/json
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
 dotenvExpand(myEnv)
 
-app.get("/api",(req,res)=>{
-    res.json({"users":["userOne","userTwo","userThree"]})
+
+const signUp = require('./routes/user');
+app.use('/api',signUp);
+
+app.use((error, req, res, next) => {
+  handleErrorResponse(res, error);
 })
-
-
-
+app.use(express.json())
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
